@@ -31,16 +31,23 @@
 .app-block-intro {
   padding-top: 20px;
 }
-
 .app-block-intro img {
   width: 80%;
+  margin-bottom: 0%;
 }
 
 /* block img */
 .app-block-game img,
 .app-block-stats img {
-  width: 100%;
+  width: 60%;
 }
+
+.app-block-game-img {
+    width: 80%;
+    margin: auto;
+}
+
+
 @media (max-width: 480px) {
   .app-block-game-img {
     transform: scale(1.5) !important;
