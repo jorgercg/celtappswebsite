@@ -8988,5 +8988,9 @@ h6, .h6 {
   color: #bbbbbb;
   text-transform: uppercase; }
 
+.text-footer {
+  color: #bbbbbb;
+}
+
 strong {
   font-weight: bold; }
