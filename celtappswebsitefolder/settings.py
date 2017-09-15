@@ -23,10 +23,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1lgm)0lu421qfd-6yo!x0^4at-c5es$_nw&vp!w&g-z7qn!(e2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
+ALLOWED_HOSTS = ['www.celtapps.com','celtapps.com']
+
+SITE_URL = 'https://celtapps.com'
 
 # Application definition
 
